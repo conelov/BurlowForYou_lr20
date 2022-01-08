@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddDialog</class>
+ <widget class="QDialog" name="AddDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>303</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Добавить запись</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="rowWrapPolicy">
+      <enum>QFormLayout::WrapAllRows</enum>
+     </property>
+     <item row="1" column="0">
+      <widget class="QLabel" name="l_name">
+       <property name="text">
+        <string>Фамилия</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="le_name"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="l_maserName">
+       <property name="text">
+        <string>Фамилия руководителя</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="le_maserName"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="l_dutiesSeq">
+       <property name="text">
+        <string>Обязанности</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="le_dutiesSeq"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="l_slaveNameSeq">
+       <property name="text">
+        <string>Подчиненные</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="le_slaveNameSeq"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="cb_type"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="l_type">
+       <property name="text">
+        <string>Тип работника</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="bb">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>cb_type</tabstop>
+  <tabstop>le_name</tabstop>
+  <tabstop>le_maserName</tabstop>
+  <tabstop>le_dutiesSeq</tabstop>
+  <tabstop>le_slaveNameSeq</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>bb</sender>
+   <signal>accepted()</signal>
+   <receiver>AddDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bb</sender>
+   <signal>rejected()</signal>
+   <receiver>AddDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
