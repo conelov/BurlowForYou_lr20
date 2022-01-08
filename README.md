@@ -12,4 +12,4 @@ Developer (разработчик) и Coder (младший программис
 Дополнительное задание: дополнить класс методами сортировки по некоторому критерию,
 вывода в файл и считывания из файла.
 #### Demo:
-![demo](https://github.com/conelov/BurlowForYou_lr20/tree/master/demo/demo.mp4)
+![demo](https://github.com/conelov/BurlowForYou_lr20/tree/master/demo/demo.gif)
